@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<style >
+</style>
+</head>
+<body>
+  <header class="page-header">
+    <nav>
+      <div class="trigger-menu-wrapper">
+        <button class="trigger-menu">
+          <svg width="12" height="12" viewBox="0 0 24 24">
+            <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
+          </svg>
+          <span>Brady's of Shankill</span>
+        </button>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Menu</a>
+        </li>
+        <li>
+          <a href="">Takeaway</a>
+        </li>
+        <li>
+          <a href="">Location</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<hr>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="https://www.facebook.com/BradysShankill/" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/bradysshankill?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com/bradysofshankill/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+<div class="content">
+  <div class = "title">
+    <hr>
+    <h3>About us</h3>
+    <hr>
+  </div>
+    <p>
+        Brady's Of Shankill is an Award Winning, Bord Failte accredited pub, restaurant and off licence. 
+        Having previously held the prestigious Black & White 
+        Pub of the year and voted best bar food and best charity event 2015, 
+        Brady's offer award winning breakfast, carvery and A La Carte dining 7 days a week.
+    </p>
+</div>
+<div class="img_container01">
+  <img src="Images/Brayds_Wings.JPG" width="960" height="640" />
+  <img src="Images/Beer.jpg" width="960" height="640" />
+</div>
+
+<div class = footer>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+  </div>
+<script>
+const body = document.body;
+const triggerMenu = document.querySelector(".page-header .trigger-menu");
+const nav = document.querySelector(".page-header nav");
+const menu = document.querySelector(".page-header .menu");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
+
+triggerMenu.addEventListener("click", () => {
+  body.classList.toggle("menu-open");
+});
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll == 0) {
+    body.classList.remove(scrollUp);
+    return;
+  }
+  
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    // down
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+  } else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
+    // up
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+  }
+  lastScroll = currentScroll;
+});
+
+</script>
+
+</body>
+</html>
