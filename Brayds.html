@@ -48,7 +48,53 @@
   </div>
 <!--End of the social media icon bar -->
 
+  <div class="b">
+    <!-- Trigger/Open The Modal -->
+  <button id="myBtn"><h2>Make a booking here</h2></button>
+
+<!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2> Welcome to Brady's </h2>
+    <p>We are now taking table bookings. You can call and book by phoning 012820153 or by emailing emma@johnbradygroup.ie.</p>
+
+    <p>Bookings will be taken for a 2 hour period. All table bookings must be accompanied by a food order</p>
+
+    <p>All bookings will be confirmed by phone.  If you have any questions, do not hesitate to call us at any time.</p>
+
+    <p>We look forward to seeing you at Brady's. Multi-Award winning food, delicious cocktails and ice cold beer!</p>
+
+    <p>Quality isn't a destination. It's an ongoing journey!</p>
+  </div>
+
+</div>
+  </div>
+
+
 <!--Image carousel for Site-->
+<!--Updates section for right hand side of the page-->
+<div class="c">
+  <hr>
+  <h2>Updates</h2>
+  <hr>
+  <p>The pub is due to reopen on monday the 29th of June under a new set of restrictions. 
+    Access to the pub will be managed on a booking basis and each booking will last up to two hours.
+  </p>
+  <hr>
+  <p>Due to these new rulings we will not be able to accomidate all who want their time in our doors, but rest assured
+    all of our staff will be hard at work to make sure your stay with us is like it used to be.
+  </p>
+  <hr>
+  <p>
+    Once you are at your table we would ask that you please stay in your seat unless it is neccesary to move.
+    We cannot allow mingling between other tables, merging of tables, or sitting at seperate tables. These are the rules
+    being given to us and we risk severe consequences if these rules are not followed.
+  </p>
+  <hr>
+</div>
 
 <!--Content bar is divided up into columns and rows -->
   <div class="content">
@@ -139,9 +185,6 @@
     <img src="Images/GardenRoom-1.jpg" width="960" height="640" />
     <img src="Images/gardenRoom-2.jpg" width="960" height="640" />
   </div>
-  
- <hr>
-
   <div class = footer>
         <footer>
             <h4>Designed by Harry.B</h4>
@@ -149,6 +192,32 @@
   </div>
 <!--JavaScript embedded within the html page-->
 <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 const body = document.body;
 const triggerMenu = document.querySelector(".page-header .trigger-menu");
 const nav = document.querySelector(".page-header nav");
@@ -179,7 +248,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-
 </script>
 
 </body>
