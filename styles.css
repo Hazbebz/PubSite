@@ -121,7 +121,7 @@ ul {
 }
 
 .page-header .trigger-menu svg {
-  transition: transform 0.3s;
+  transition: transform .5s;
 }
  
 .menu-open {
@@ -186,10 +186,10 @@ ul {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
-  left: 0;
+  left:0px;
   top: 0;
   width: 100%; /* Full width */
-  height: 500px; /* Full height */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -201,13 +201,24 @@ ul {
   text-align: center;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border: 5px solid var(--lightpurple);
+  border-radius: 5px;
+  width: 60%;
+}
+.modal-content h3{
+  border-radius: 5px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 25px;
 }
 .modal-content p {
-padding: 10px;
-font-size: 20px;
+  padding:5px;
+  padding-left: 40px;
+  padding-right:40px;
+  font-size: 20px;
+
 }
+
 
 /* The Close Button */
 .close {
@@ -216,7 +227,6 @@ font-size: 20px;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -224,29 +234,32 @@ font-size: 20px;
   cursor: pointer;
 }
 
-
-div.c {
-  position: absolute;
-  margin-top: 150px;
-  right: 50px;
-  width: 250px;
-  height: 400px;
-} 
-div.c p {
-  padding: 20px;
-} 
-div.c h2 {
-  padding: 10px;
- 
-} 
-
 div.b {
   position: absolute;
   margin-top: 150px;
-  left: 0px;
+  right: 10px;
+  min-width:120px ;
   width: 100px;
-  height: 50px;
-  border: 1px solid var(--lightpurple);
+  height: 110px;
+}
+div.b h2{
+ font-family: inherit;
+}
+div.b button{
+    display: inline-block;
+    border: solid 5px #464444;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    text-decoration: none;
+    background: var(--lightpurple);
+    color: #ffffff;
+    font-family: 'HelveticaNeue';
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 /*First content box*/
 /* Create two equal columns that floats next to each other */
@@ -270,7 +283,7 @@ div.b {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 70%;
+    width: 75%;
   }
   .column_right{
     width: 75%;
@@ -293,17 +306,17 @@ div.b {
    background-color: white;
    font-size: 20px;
   }
-
-  
   .content .title h3{
-
     text-align: left;
     padding: 5px 16px;
     max-width: 1000px;
     text-decoration: none;
     font-size: 25px;
-    color: #464444;
+    background-color: var(--lightpurple);
+    color: white;
     margin: auto;
+    border-radius: 5px;
+    border: solid #464444;
   }
   .content_sub {
     padding-top: 30px;
@@ -355,12 +368,15 @@ div.b {
    }
   .content_2 .title_02 h3{
     padding-top: 40px;
-    color: #464444;
+    color: white;
+    background-color: var(--lightpurple);
     text-align: left;
     padding: 5px 16px;
     text-decoration: none;
     font-size: 25px;
     margin: auto;
+    border-radius: 5px;
+    border:solid #464444;
   }
   .content_2 p{
     padding-top: 10px;
