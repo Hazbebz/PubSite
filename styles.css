@@ -140,12 +140,11 @@ ul {
   /*style social media icons*/
 .icon-bar {
     position: fixed;
-    top: 50%;
+    top: 30%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-  
   /* Style the icon bar links */
   .icon-bar a {
     display: block;
@@ -157,7 +156,7 @@ ul {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  
+
   /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
     background: #000;
@@ -194,7 +193,6 @@ ul {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -216,10 +214,7 @@ ul {
   padding-left: 40px;
   padding-right:40px;
   font-size: 20px;
-
 }
-
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -233,7 +228,6 @@ ul {
   text-decoration: none;
   cursor: pointer;
 }
-
 div.b {
   position: absolute;
   margin-top: 150px;
@@ -249,7 +243,8 @@ div.b button{
     display: inline-block;
     border: solid 3px #464444;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    float: right;
     margin: 0;
     text-decoration: none;
     background: var(--lightpurple);
@@ -261,6 +256,171 @@ div.b button{
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+/*End of modal one and button div*/
+
+/* The Modal (background) */
+.modal_2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left:0px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content_2 {
+  background-color: #fefefe;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid var(--lightpurple);
+  border-radius: 5px;
+  width: 60%;
+}
+.modal-content_2 h3{
+  border-radius: 5px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 25px;
+}
+.modal-content_2 p {
+  padding:5px;
+  padding-left: 40px;
+  padding-right:40px;
+  font-size: 20px;
+
+}
+/* The Close Button */
+.close_2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close_2:hover,
+.close_2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+div.c {
+  position: absolute;
+  margin-top: 200px;
+  right: 10px;
+  min-width:120px ;
+  width: 100px;
+  height: 110px;
+}
+div.c h2{
+ font-family: inherit;
+}
+div.c button{
+    display: inline-block;
+    border: solid 3px #464444;
+    border-radius: 5px;
+    padding: 7px;
+    float:right;
+    margin: 0;
+    text-decoration: none;
+    background: var(--lightpurple);
+    color: #ffffff;
+    font-family: 'HelveticaNeue';
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+/*End of second modal and div c button*/
+.modal_3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left:0px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content_3 {
+  background-color: #fefefe;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid var(--lightpurple);
+  border-radius: 5px;
+  width: 60%;
+}
+.modal-content_3 h3{
+  border-radius: 5px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 25px;
+}
+.modal-content_3 p {
+  padding:5px;
+  padding-left: 40px;
+  padding-right:40px;
+  font-size: 20px;
+
+}
+/* The Close Button */
+.close_3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close_3:hover,
+.close_3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+div.d {
+  position: absolute;
+  margin-top: 267px;
+  right: 10px;
+  min-width:120px ;
+  width: 100px;
+  height: 110px;
+}
+div.d h2{
+ font-family: inherit;
+}
+div.d button{
+    display: inline-block;
+    border: solid 3px #464444;
+    border-radius: 5px;
+    padding: 7px;
+    float:right;
+    margin: 0;
+    text-decoration: none;
+    background: var(--lightpurple);
+    color: #ffffff;
+    font-family: 'HelveticaNeue';
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+div.d img{
+  width: 48%;
+  height: 300px;
+  border-radius: 5px;
+}
+/*End of second modal and div c button*/
+
 /*First content box*/
 /* Create two equal columns that floats next to each other */
 .column {
@@ -288,6 +448,7 @@ div.b button{
   }
   .column_right{
     width: 75%;
+    border:solid red;
   }
   .column_right_2{
     width: 75%;
@@ -298,7 +459,7 @@ div.b button{
 
 /*Styling rules for all content components (Headers, text, images, etc...) */
 .content {
-   padding-top: 130px;
+   padding-top: 110px;
    padding-bottom:10px ;
    max-width: 1000px;
    max-height: 700px;
@@ -306,6 +467,7 @@ div.b button{
    margin: auto;
    background-color: white;
    font-size: 20px;
+   
   }
   .content .title h3{
     text-align: left;
@@ -403,6 +565,7 @@ div.b button{
     width: 48%;
     height: 300px;
     display: inline-block;
+    border-radius: 8px;
   }
 /*End of bottom content styling rules*/
 .sticky {
