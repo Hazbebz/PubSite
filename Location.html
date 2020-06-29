@@ -3,8 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
-<style >
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -19,56 +18,197 @@
       </div>
       <ul class="menu">
         <li>
-          <a href="">Home</a>
+          <a href="Brayds.html">Home</a>
         </li>
         <li>
-          <a href="">Menu</a>
+          <a href="Menu.html">Menu</a>
         </li>
         <li>
-          <a href="">Takeaway</a>
+          <a href="TakeAway.html">Takeaway</a>
         </li>
         <li>
-          <a href="">Location</a>
+          <a href="Location.html">Location</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="Contact.html">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 <hr>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- The social media icon bar -->
-<div class="icon-bar">
-  <a href="https://www.facebook.com/BradysShankill/" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="https://twitter.com/bradysshankill?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
-  <a href="https://www.instagram.com/bradysofshankill/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
-</div>
-<div class="content">
-  <div class = "title">
-    <hr>
-    <h3>About us</h3>
-    <hr>
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/BradysShankill/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/bradysshankill?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/bradysofshankill/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
   </div>
-    <p>
-        Brady's Of Shankill is an Award Winning, Bord Failte accredited pub, restaurant and off licence. 
-        Having previously held the prestigious Black & White 
-        Pub of the year and voted best bar food and best charity event 2015, 
-        Brady's offer award winning breakfast, carvery and A La Carte dining 7 days a week.
-    </p>
-</div>
-<div class="img_container01">
-  <img src="Images/Brayds_Wings.JPG" width="960" height="640" />
-  <img src="Images/Beer.jpg" width="960" height="640" />
+
+<!--End of the social media icon bar -->
+
+<!--Updates side menu icons and pop up info-->  
+  <div class="b">
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">
+      <h3>Updates </h3>
+    </button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Updates</h3>
+        <div class = "modal_cont02">
+          <p>The pub is due to reopen on monday the 29th of June under a new set of restrictions. 
+          Access to the pub will be managed on a booking basis and each booking will last up to two hours.
+          </p>
+          <p>Due to these new rulings we will not be able to accomidate all who want their time in our doors, but rest assured
+          all of our staff will be hard at work to make sure your stay with us is like it used to be.
+          </p>
+          <p>
+          Once you are at your table we would ask that you please stay in your seat unless it is neccesary to move.
+          We cannot allow mingling between other tables, merging of tables, or sitting at seperate tables. These are the rules
+          being given to us and we risk severe consequences if these rules are not followed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="c">
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn_2"><h3>Booking Info</h3></button>
+    <!-- The Modal -->
+    <div id="myModal_2" class="modal_2">
+
+      <!-- Modal content -->
+      <div class="modal-content_2">
+        <span class="close_2">&times;</span>
+        <h3> Welcome to Brady's</h3>
+        <div class = "modal_cont01">
+          <p>We are now taking table bookings. You can call and book by phoning 012820153 or by emailing emma@johnbradygroup.ie.</p>
+  
+        <p>Bookings will be taken for a 2 hour period. All table bookings must be accompanied by a food order</p>
+  
+        <p>All bookings will be confirmed by phone.  If you have any questions, do not hesitate to call us at any time.</p>
+  
+        <p>We look forward to seeing you at Brady's. Multi-Award winning food, delicious cocktails and ice cold beer!</p>
+  
+        <p>Quality isn't a destination. It's an ongoing journey!</p>
+      </div>
+    </div>
+  </div>  
 </div>
 
-<div class = footer>
-    <footer>
-        <h2>Footer</h2>
-    </footer>
+<div class="d">
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn_3"><h3>Live Music & Sports</h3></button>
+  <!-- The Modal -->
+  <div id="myModal_3" class="modal_3">
+
+    <!-- Modal content -->
+    <div class="modal-content_3">
+      <span class="close_3">&times;</span>
+      <h3>Live Music</h3>
+      <div class = "modal_cont01">
+        <p>Music has temporariy suspended due to the covid-19 restrictions placed on the pub</p>
+
+      <p>We will notify you all as soon as soon as we know when we can get music back up and going again.</p>
+
+      <img src = "Images/Band.jpg" size = "">
+    </div>
   </div>
+</div>  
+</div>
+
+  <div class = footer>
+        <footer>
+            <h4>Designed by Harry.B</h4>
+        </footer>
+  </div>
+<!--JavaScript embedded within the html page-->
 <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal_2
+ var modal_2 = document.getElementById("myModal_2");
+
+// Get the button that opens the modal_2
+var btn_2 = document.getElementById("myBtn_2");
+
+// Get the <span> element that closes the modal
+var span_2 = document.getElementsByClassName("close_2")[0];
+
+// When the user clicks the button, open the modal 
+btn_2.onclick = function() {
+  modal_2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_2.onclick = function() {
+  modal_2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_2) {
+    modal_2.style.display = "none";
+  }
+}
+
+
+// Get the modal_3
+var modal_3 = document.getElementById("myModal_3");
+
+// Get the button that opens the modal_2
+var btn_3 = document.getElementById("myBtn_3");
+
+// Get the <span> element that closes the modal
+var span_3 = document.getElementsByClassName("close_3")[0];
+
+// When the user clicks the button, open the modal 
+btn_3.onclick = function() {
+  modal_3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_3.onclick = function() {
+  modal_3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_3) {
+    modal_3.style.display = "none";
+  }
+}
+
 const body = document.body;
 const triggerMenu = document.querySelector(".page-header .trigger-menu");
 const nav = document.querySelector(".page-header nav");
@@ -99,7 +239,6 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-
 </script>
 
 </body>

@@ -232,7 +232,7 @@ div.b {
   position: absolute;
   margin-top: 150px;
   right: 10px;
-  min-width:120px ;
+  min-width:130px ;
   width: 100px;
   height: 110px;
 }
@@ -312,7 +312,7 @@ div.c {
   position: absolute;
   margin-top: 200px;
   right: 10px;
-  min-width:120px ;
+  min-width:100px ;
   width: 100px;
   height: 110px;
 }
@@ -599,7 +599,6 @@ div.d img{
   padding: 10px 16px;
   background: var(--lightpurple);
   color: #f1f1f1;
-  bottom:0;
   border:solid;
   height:80px;
   width: 100%;
