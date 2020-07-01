@@ -452,7 +452,7 @@
     .column {
         float: left;
         width: 50%;
-        height: 770px;
+        height: 690px;
         background-color: var(--lightpurple);
         padding: 5px;
         border:solid white;
@@ -495,7 +495,7 @@
     /*Footer styling rules*/
   .footer {
     position: bottom ;
-    margin-top:600px;
+    margin-top:1700px;
     padding: 10px 16px;
     background: var(--lightpurple);
     color: #f1f1f1;
