@@ -120,6 +120,18 @@
 </div>  
 </div>
 <!--Content bar is divided up into columns and rows -->
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="Images/whiskey.jpg" id= "lastclone" alt="">
+      <img src="Images/liquor-bottles-alcohol-drink.jpg" alt="">
+      <img src="Images/pint_og.jpg" alt="">
+      <img src="Images/whiskey.jpg" alt="">
+      <img src="Images/whiskey.jpg" id="firstclone" alt="">
+    </div>
+  </div>
+
+  <button id="prevBtn">Previous</button>
+  <button id="nextBtn">Next</button>
 <div class="content">
     <div class="row">
       <div class="column">
@@ -147,7 +159,7 @@
       </div>
       <div class="column_right">
         <div class = "img_container02">
-          <img src = "Images/IMG_20200630_140300.jpg" >
+          <img src = "Images/whiskey.jpg" >
         </div>
       </div>
     </div>
@@ -301,6 +313,43 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
+
+/*carousel*/
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
+
+//buttons
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+//counter
+let counter = 1;
+const size = carouselImages[0].clientWidth;
+
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
+
+//button listeners
+nextBtn.addEventListener('click',()=>{
+    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + -(size * counter) + 'px)'; 
+
+});
+
+prevBtn.addEventListener('click',()=>{
+    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
+});
+
+carouselSlide.addEventListener('transitioned', () =>{
+  console.log('Fired');
+  if(carouselImages[counter.id === 'lastclone']){
+    carouselSlide.style.transition = 'none';
+    counter = carouselImages.length -2;
+  }
+});
+
 </script>
 
 </body>
