@@ -420,10 +420,10 @@ div.d img{
 /*End of second modal and div c button*/
 
 .carousel-container{
-  width: 50%;
+  width: 910px;
   margin: auto;
   overflow: hidden;
-  
+  border-radius: 8px;
 }
 
 .carousel-slide{
@@ -438,6 +438,23 @@ div.d img{
   width: 100%;
   border-radius: 8px;
   padding: 20px;
+}
+
+#prevBtn{
+  position: absolute;
+  top: 35%;
+  z-index: 10;
+  left:550px;
+  font-size:30px;
+  color: lightgray;
+}
+#nextBtn{
+  position: absolute;
+  top: 35%;
+  z-index: 10;
+  right:550px;
+  font-size:30px;
+  color: lightgray;
 }
 
 

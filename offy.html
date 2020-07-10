@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="offy.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -13,7 +14,7 @@
           <svg width="12" height="12" viewBox="0 0 24 24">
             <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
           </svg>
-          <span>Brady's of Shankill</span>
+          <span>Brady's Wine Store</span>
         </button>
       </div>
       <ul class="menu">
@@ -121,17 +122,24 @@
 </div>
 <!--Content bar is divided up into columns and rows -->
   <div class="carousel-container">
+    <i class="fas fa-arrow-left" id="previousBtn"></i>
+    <i class="fas fa-arrow-right" id="nextBtn"></i>
     <div class="carousel-slide">
-      <img src="Images/whiskey.jpg" id= "lastclone" alt="">
+      <img src= "Images/beer.jpg"  id= "lastClone" alt="">
+      <img src="Images/whiskey.jpg"  alt="">
       <img src="Images/liquor-bottles-alcohol-drink.jpg" alt="">
       <img src="Images/pint_og.jpg" alt="">
-      <img src="Images/whiskey.jpg" alt="">
-      <img src="Images/whiskey.jpg" id="firstclone" alt="">
+      <img src= "Images/beer.jpg" alt="">
+      <img src="Images/whiskey.jpg" id="firstClone" alt="">
     </div>
+    <button id="prevBtn"> <i class="fa fa-arrow-left" aria-hidden="true"> </i></button>
+
+    <button id="nextBtn"> <i class="fa fa-arrow-right" aria-hidden="true"> </i></button>
   </div>
 
-  <button id="prevBtn">Previous</button>
-  <button id="nextBtn">Next</button>
+  
+
+
 <div class="content">
     <div class="row">
       <div class="column">
@@ -318,7 +326,7 @@ window.addEventListener("scroll", () => {
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
-//buttons
+//Buttons
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
@@ -328,28 +336,35 @@ const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
 
-//button listeners
-nextBtn.addEventListener('click',()=>{
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    carouselSlide.style.transform = 'translateX(' + -(size * counter) + 'px)'; 
+//Button Listeners 
+nextBtn.addEventListener('click',() =>{
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  counter++; //add one to the transition state
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
+}
+);
 
-});
+prevBtn.addEventListener('click',() =>{
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  counter--; //decrement one to the transition state
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
+}
+);
 
-prevBtn.addEventListener('click',()=>{
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter--;
+carouselSlide.addEventListener('transitionend',() =>{
+
+  if(carouselImages[counter].id === 'lastClone'){
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length - 2;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
-});
+  }
 
-carouselSlide.addEventListener('transitioned', () =>{
-  console.log('Fired');
-  if(carouselImages[counter.id === 'lastclone']){
-    carouselSlide.style.transition = 'none';
-    counter = carouselImages.length -2;
+  if(carouselImages[counter].id === 'firstClone'){
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length  - counter;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
   }
 });
-
 </script>
 
 </body>
