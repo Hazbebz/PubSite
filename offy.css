@@ -137,8 +137,8 @@ ul {
 
   /*style social media icons*/
 .icon-bar {
-    position: fixed;
-    top: 30%;
+    position:fixed;
+    bottom: 80px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -318,21 +318,21 @@ div.c h2{
  font-family: inherit;
 }
 div.c button{
-    display: inline-block;
-    border: solid 3px #464444;
-    border-radius: 5px;
-    padding: 7px;
-    float:right;
-    margin: 0;
-    text-decoration: none;
-    background: var(--lightpurple);
-    color: #ffffff;
-    font-family: 'HelveticaNeue';
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  display: inline-block;
+  border: solid 3px #464444;
+  border-radius: 5px;
+  padding: 10px;
+  float: right;
+  margin: 0;
+  text-decoration: none;
+  background: var(--lightpurple);
+  color: #ffffff;
+  font-family: 'HelveticaNeue';
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 /*End of second modal and div c button*/
 .modal_3 {
@@ -396,7 +396,7 @@ div.d h2{
  font-family: inherit;
 }
 div.d button{
-    display: inline-block;
+    display: block;
     border: solid 3px #464444;
     border-radius: 5px;
     padding: 7px;
@@ -442,20 +442,26 @@ div.d img{
 
 #prevBtn{
   position: absolute;
-  top: 35%;
+  top: 320px;
   z-index: 10;
-  left:550px;
+  left:20%;
   font-size:30px;
-  color: lightgray;
+  color: var(--lightpurple);
+  
 }
+
+
 #nextBtn{
   position: absolute;
-  top: 35%;
-  z-index: 10;
-  right:550px;
+  top: 320px;
+  z-index: 1;
+  right:20%;
   font-size:30px;
-  color: lightgray;
+  color: var(--lightpurple);
+
+
 }
+
 
 
 /*First content box*/

@@ -155,7 +155,6 @@ ul {
     border-bottom-right-radius: 5px;
   }
 
-  /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
     background: #000;
   }
@@ -176,6 +175,7 @@ ul {
 * {
   box-sizing: border-box;
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -237,23 +237,35 @@ div.b {
 div.b h2{
  font-family: inherit;
 }
-div.b button{
-    display: inline-block;
-    border: solid 3px #464444;
-    border-radius: 5px;
-    padding: 10px;
-    float: right;
-    margin: 0;
-    text-decoration: none;
-    background: var(--lightpurple);
-    color: #ffffff;
-    font-family: 'HelveticaNeue';
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+
+.myBtn{
+  position: fixed;
+  top:30%;
+  right: 0px;
+  border: solid 3px #464444;
+  border-radius: 5px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+.myBtn button{
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  background: var(--lightpurple);
+}
+
+.myBtn button:hover {
+  background: #464444;
+}
+
+
+
 /*End of modal one and button div*/
 
 /* The Modal (background) */
@@ -317,23 +329,7 @@ div.c {
 div.c h2{
  font-family: inherit;
 }
-div.c button{
-    display: inline-block;
-    border: solid 3px #464444;
-    border-radius: 5px;
-    padding: 7px;
-    float:right;
-    margin: 0;
-    text-decoration: none;
-    background: var(--lightpurple);
-    color: #ffffff;
-    font-family: 'HelveticaNeue';
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
+
 /*End of second modal and div c button*/
 .modal_3 {
   display: none; /* Hidden by default */
@@ -395,23 +391,7 @@ div.d {
 div.d h2{
  font-family: inherit;
 }
-div.d button{
-    display: inline-block;
-    border: solid 3px #464444;
-    border-radius: 5px;
-    padding: 7px;
-    float:right;
-    margin: 0;
-    text-decoration: none;
-    background: var(--lightpurple);
-    color: #ffffff;
-    font-family: 'HelveticaNeue';
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
+
 div.d img{
   width: 48%;
   height: 300px;

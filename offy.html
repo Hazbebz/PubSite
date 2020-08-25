@@ -55,7 +55,7 @@
       <!-- Modal content -->
       <div class="modal-content">
       <span class="close">&times;</span>
-      <h3>Updates</h3>
+      <h3><i class="fas fa-info-circle"></i></h3>
         <div class = "modal_cont02">
           <p>The pub is due to reopen on monday the 29th of June under a new set of restrictions. 
           Access to the pub will be managed on a booking basis and each booking will last up to two hours.
@@ -77,7 +77,7 @@
 
   <div class="c">
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn_2"><h3>Booking Info</h3></button>
+    <button id="myBtn"><h3>Booking Info</h3></button>
     <!-- The Modal -->
     <div id="myModal_2" class="modal_2">
 
@@ -102,7 +102,7 @@
 
 <div class="d">
   <!-- Trigger/Open The Modal -->
-  <button id="myBtn_3"><h3>Live Music & Sports</h3></button>
+  <button id="myBtn"><h3>Live Music & Sports</h3></button>
   <!-- The Modal -->
   <div id="myModal_3" class="modal_3">
 
@@ -122,8 +122,6 @@
 </div>
 <!--Content bar is divided up into columns and rows -->
   <div class="carousel-container">
-    <i class="fas fa-arrow-left" id="previousBtn"></i>
-    <i class="fas fa-arrow-right" id="nextBtn"></i>
     <div class="carousel-slide">
       <img src= "Images/beer.jpg"  id= "lastClone" alt="">
       <img src="Images/whiskey.jpg"  alt="">
@@ -325,7 +323,7 @@ window.addEventListener("scroll", () => {
 /*carousel*/
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-
+0
 //Buttons
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
@@ -338,14 +336,14 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Button Listeners 
 nextBtn.addEventListener('click',() =>{
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  carouselSlide.style.transition = "transform 0.6s ease-in-out";
   counter++; //add one to the transition state
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
 }
 );
 
 prevBtn.addEventListener('click',() =>{
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  carouselSlide.style.transition = "transform 0.6s ease-in-out";
   counter--; //decrement one to the transition state
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
 }

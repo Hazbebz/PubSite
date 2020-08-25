@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -44,14 +45,17 @@
     <a href="https://www.instagram.com/bradysofshankill/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
   </div>
 
+  <div class = "myBtn">
+  <button id="myBtn1"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></button>
+  <button id="myBtn_3"> <i class="fa fa-music fa-2x" aria-hidden="true"></i></button>
+  <button id="myBtn_2"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></button>
+
+  </div>
 <!--End of the social media icon bar -->
 
 <!--Updates side menu icons and pop up info-->  
+<div modals>
   <div class="b">
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">
-      <h3>Updates </h3>
-    </button>
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
@@ -79,7 +83,7 @@
 
   <div class="c">
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn_2"><h3>Booking Info</h3></button>
+  
     <!-- The Modal -->
     <div id="myModal_2" class="modal_2">
 
@@ -104,7 +108,7 @@
 
 <div class="d">
   <!-- Trigger/Open The Modal -->
-  <button id="myBtn_3"><h3>Live Music & Sports</h3></button>
+  
   <!-- The Modal -->
   <div id="myModal_3" class="modal_3">
 
@@ -121,6 +125,7 @@
     </div>
   </div>
 </div>  
+</div>
 </div>
 
 <!--Content bar is divided up into columns and rows -->
@@ -219,7 +224,7 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("myBtn1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
